@@ -1,7 +1,36 @@
-<h1>github</h1>
-<p>modified</p>
+<!DOCTYPE html>
+<html>
+<body>
 
-<p>modified rupa</p> 
-<h1>first one modified</h1>
-<p>localhost<p>
-<p>hello<p>
+
+	<!-- Change the html content -->
+<p id="content">JavaScript can change HTML content.</p>
+<button type="button" onclick= change()>Click</button>
+
+
+<!-- Difference between Null and Undefined 
+Strings,Number,Bolean,Underfined,Object,Function -->
+
+<p id="dataTypes"></p>
+<p id="dataTypes1"></p>
+<p id="dataTypes2"></p>
+<p id="dataTypes3"></p>
+
+<!-- Placing scripts at the bottom of the <body> element improves the display speed, 
+because script compilation slows down the display. -->
+
+<script>
+	function change(){
+	document.getElementById("content").innerHTML ="Hello World";
+	document.getElementById("content").style.fontSize = "35px";
+	}
+	
+	<!-- Difference between Null and Undefined -->
+	document.getElementById("dataTypes").innerHTML =(typeof undefined);
+	document.getElementById("dataTypes1").innerHTML=(typeof null) ;
+	document.getElementById("dataTypes2").innerHTML=(null === undefined);
+	document.getElementById("dataTypes3").innerHTML=(null == undefined); 
+</script>
+
+</body>
+</html>
