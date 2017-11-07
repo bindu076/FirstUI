@@ -1,9 +1,27 @@
 <html>
 <body>
-<p id="find">Finding the length of the string</p>
-<p ></p>
+<p id="find" onmouseover = "abc()">Finding the length of the string</p>
+<p id="change" onmouseover = "abc()">methods string methods </p>
+
 <script>
-	var str= "<p id='find'>Finding the length of the string</p>";
-	document.getElementById("find").innerHTML = str.length;
+function abc() {
+    var str = document.getElementById("find").innerHTML;
+    document.getElementById("find").innerHTML = str.length;
+    
+   /*  using a regular expression we can replace multiple words in the given paragraph */
+    var str1 = document.getElementById("change").innerHTML;
+    var txt = str1.replace(/methods/g,"W3Schools",);
+    document.getElementById("change").innerHTML = txt;
+}
+  
+
+	/* string Extraction (unicodes) */
+    var str = "bindu";
+     text=str.charCodeAt(1);
+     console.log(text);
+     
+     
+	/* var str= document.getElementById("find").textContent";
+	document.getElementById("find").innerHTML = str.length; */
 </script>
 </body></html>
