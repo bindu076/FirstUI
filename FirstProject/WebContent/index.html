@@ -26,10 +26,12 @@ because script compilation slows down the display. -->
 	}
 	
 	<!-- Difference between Null and Undefined -->
-	document.getElementById("dataTypes").innerHTML =(typeof undefined);
-	document.getElementById("dataTypes1").innerHTML=(typeof null) ;
-	document.getElementById("dataTypes2").innerHTML=(null === undefined);
-	document.getElementById("dataTypes3").innerHTML=(null == undefined); 
+	var planets;
+	 var age;
+	document.getElementById("dataTypes").innerHTML =(typeof planets);
+	document.getElementById("dataTypes1").innerHTML=(typeof age) ;
+	document.getElementById("dataTypes2").innerHTML=(planets === null);
+	document.getElementById("dataTypes3").innerHTML=(age == null); 
 </script>
 
 </body>
