@@ -16,8 +16,24 @@ function isArray(abc) {
 	 func();
 	 
 	 /* Calculating Min and Max values of an array without using sort method*/
+	var x = Math.max.apply(null,arr);
+	/*  Math.min(arr); */ /* why its not Working */
+	 console.log(x);
 	
-
+			/* Objects in arrays */
+	var obj= [{name:"bindu",age:24},{name:"apple",age:20}];
+	     function sortingArray(a,b){
+	    	 if(a.name < b.name){
+	    		 return -1;
+	    	 }
+	    	 if(a.name > b.name){
+	    		 return 1;
+	    	 }
+	    	 return 0;
+	     }
+	   y= obj.sort(sortingArray);
+	     console.log(y);
+         
 </script>
 </body>
 </html>
