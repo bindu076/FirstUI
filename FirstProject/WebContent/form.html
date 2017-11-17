@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form id = "form_1" >
+	Name: <input  type = "text" id = "firstName" >
+	LastName:<input  type = "text" id = "lastName" >
+	Phone:<input  type = "text" id = "number" >
+		  <input type = "submit" onclick = "validate()"  value = "submit" >	
+	</form>
+<script>
+ 		function validate(){
+ 			/* var name = document.getElementById("firstName","lastName").value; */
+ 			var name = document.querySelectorAll("#firstName, #lastName").value;
+ 			if (!name[0].match(/^[A-Z]/)){
+ 				alert("invalid Name");
+ 			}
+ 			var num = document.getElementById("number").value;
+ 			if (!num.match(/^[0-9]/)){
+ 				alert("Enter a valid Phone Number");
+ 			}
+ 		}
+</script>
+</body>
+</html>
