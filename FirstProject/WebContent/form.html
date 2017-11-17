@@ -4,15 +4,16 @@
 </head>
 <body>
 	<form id = "form_1" >
-	Name: <input  type = "text" id = "firstName" >
-	LastName:<input  type = "text" id = "lastName" >
+	Name: <input  type = "text" id = "firstName" class = "firstName_1" >
+	LastName: <input  type = "text" id = "lastName" class = "lastName_1">
 	Phone:<input  type = "text" id = "number" >
 		  <input type = "submit" onclick = "validate()"  value = "submit" >	
 	</form>
 <script>
  		function validate(){
- 			/* var name = document.getElementById("firstName","lastName").value; */
- 			var name = document.querySelectorAll("#firstName, #lastName").value;
+ 		var name = document.getElementById("firstName"); 
+ 			 /* var name = document.getElementsByClassName("firstName_1","lastName_1");  */
+ 			/* var name = document.querySelectorAll("#firstName, #lastName"); */
  			if (!name[0].match(/^[A-Z]/)){
  				alert("invalid Name");
  			}
