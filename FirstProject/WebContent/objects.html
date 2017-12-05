@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+ 	var currentYear= 2017;
+	function People(name,birthYear){
+		this.name =name ;
+		this.birthYear = birthYear;	
+	}
+	function age(){
+		var num = currentYear - this.birthYear;
+		return num ;
+	}
+	
+	var obj = new People("bindu", 1993);
+	var obj2 = new People("madhavi",1997);
+	console.log(obj.name);
+	
+	People.prototype.ageOfPerson =  age;
+	console.log(obj2.ageOfPerson());    
+	console.log(obj2.age());			/* throws error*/
+	
+</script>
+</head>
+<body>
+</body>
+</html>

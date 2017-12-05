@@ -11,8 +11,8 @@
 	</form>
 <script>
  		function validate(){
- 		var name = document.getElementById("firstName"); 
- 			 /* var name = document.getElementsByClassName("firstName_1","lastName_1");  */
+ 		/* var name = document.getElementById("firstName").value; */
+ 			 var name = document.getElementsByClassName("firstName_1 , lastName_1").value;
  			/* var name = document.querySelectorAll("#firstName, #lastName"); */
  			if (!name[0].match(/^[A-Z]/)){
  				alert("invalid Name");
